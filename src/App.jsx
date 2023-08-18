@@ -3,7 +3,7 @@ import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import Copyright from "./components/Copyright";
 import CounterSection from "./components/CounterSection";
-import Features from "./components/Features.jsX";
+import Features from "./components/Features.jsx";
 import Home from "./components/Home";
 import Portfolio from "./components/Portfolio";
 import Process from "./components/Process";
