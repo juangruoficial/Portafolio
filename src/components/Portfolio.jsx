@@ -34,7 +34,7 @@ const Portfolio = () => {
                   <div className="list_inner">
                     <div
                       className="background_image"
-                      data-img-url="/public/images/portafolio/galaxies.webp"
+                      data-img-url="/images/portafolio/galaxies.webp"
                     />
                     <div className="content">
                       <div className="details">
@@ -66,7 +66,7 @@ const Portfolio = () => {
                   <div className="list_inner">
                     <div
                       className="background_image"
-                      data-img-url="/public/images/portafolio/weatherweb.png"
+                      data-img-url="/images/portafolio/weatherweb.png"
                     />
                     <div className="content">
                       <div className="details">
@@ -98,7 +98,7 @@ const Portfolio = () => {
                   <div className="list_inner">
                     <div
                       className="background_image"
-                      data-img-url="/public/images/portafolio/rickandmorty.png"
+                      data-img-url="/images/portafolio/rickandmorty.png"
                     />
                     <div className="content">
                       <div className="details">
@@ -130,7 +130,7 @@ const Portfolio = () => {
                   <div className="list_inner">
                     <div
                       className="background_image"
-                      data-img-url="/public/images/portafolio/ecommerce.png"
+                      data-img-url="/images/portafolio/ecommerce.png"
                     />
                     <div className="content">
                       <div className="details">

@@ -51,7 +51,7 @@ const Testimonials = () => {
                     <div className="image">
                       <div
                         className="main"
-                        data-img-url="/public/images/testimonials/dummy.png"
+                        data-img-url="/images/testimonials/dummy.png"
                       />
                     </div>
                     <div className="short">
@@ -63,11 +63,7 @@ const Testimonials = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="list_inner">
-                  <img
-                    className="svg"
-                    src="/public/images/svg/quote.svg"
-                    alt=""
-                  />
+                  <img className="svg" src="/images/svg/quote.svg" alt="" />
                   <p className="text">
                     Delighted with Juan's impressive web design. Highly
                     recommended. Captured my vision!
@@ -76,7 +72,7 @@ const Testimonials = () => {
                     <div className="image">
                       <div
                         className="main"
-                        data-img-url="/public/images/testimonials/dummy.png"
+                        data-img-url="/images/testimonials/dummy.png"
                       />
                     </div>
                     <div className="short">
@@ -88,11 +84,7 @@ const Testimonials = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="list_inner">
-                  <img
-                    className="svg"
-                    src="/public/images/svg/quote.svg"
-                    alt=""
-                  />
+                  <img className="svg" src="/images/svg/quote.svg" alt="" />
                   <p className="text">
                     Juan is exceptional. Stunning website. Creative,
                     professional, and user-friendly. Truly impressed.
@@ -101,7 +93,7 @@ const Testimonials = () => {
                     <div className="image">
                       <div
                         className="main"
-                        data-img-url="/public/images/testimonials/dummy.png"
+                        data-img-url="/images/testimonials/dummy.png"
                       />
                     </div>
                     <div className="short">
@@ -113,11 +105,7 @@ const Testimonials = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="list_inner">
-                  <img
-                    className="svg"
-                    src="/public/images/svg/quote.svg"
-                    alt=""
-                  />
+                  <img className="svg" src="/images/svg/quote.svg" alt="" />
                   <p className="text">
                     Amazed by Juan's elegant, modern, responsive website.
                     Outstanding online presence!
@@ -126,7 +114,7 @@ const Testimonials = () => {
                     <div className="image">
                       <div
                         className="main"
-                        data-img-url="/public/images/testimonials/dummy.png"
+                        data-img-url="/images/testimonials/dummy.png"
                       />
                     </div>
                     <div className="short">

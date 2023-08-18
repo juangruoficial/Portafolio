@@ -8,10 +8,10 @@ const aboutData = {
     "Krnon proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis",
   ],
   skillIcons: [
-    { name: "joomla", icon: "/public/images/about/jssvg.svg" },
-    { name: "wp", icon: "/public/images/svg/wp.svg" },
-    { name: "drupal", icon: "/public/images/svg/drupal.svg" },
-    { name: "laravel", icon: "/public/images/svg/laravel.svg" },
+    { name: "joomla", icon: "/images/about/jssvg.svg" },
+    { name: "wp", icon: "/images/svg/wp.svg" },
+    { name: "drupal", icon: "/images/svg/drupal.svg" },
+    { name: "laravel", icon: "/images/svg/laravel.svg" },
   ],
 };
 
@@ -23,17 +23,17 @@ const About = () => {
           <div className="about_inner">
             <div className="left">
               <div className="image_wrap">
-                <img src="/public/images/thumbs/64-49.jpg" alt="" />
+                <img src="/images/thumbs/64-49.jpg" alt="" />
                 <div
                   className="main"
-                  data-img-url="/public/images/about/profilephoto.webp"
+                  data-img-url="/images/about/profilephoto.webp"
                 />
                 <div className="extra_image">
                   <div className="image_inner">
-                    <img src="/public/images/thumbs/1-1.jpg" alt="" />
+                    <img src="/images/thumbs/1-1.jpg" alt="" />
                     <div
                       className="main_extra"
-                      data-img-url="/public/images/about/logojuandark.png"
+                      data-img-url="/images/about/logojuandark.png"
                     />
                   </div>
                 </div>

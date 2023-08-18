@@ -13,10 +13,10 @@ const Header = () => {
         <div className="header_inner">
           <div className="logo">
             <a className="light" href="#">
-              <img src="/public/images/about/logojuan.png" alt="" />
+              <img src="/images/about/logojuan.png" alt="" />
             </a>
             <a className="dark" href="#">
-              <img src="/public/images/about/logojuandark.png" alt="" />
+              <img src="/images/about/logojuandark.png" alt="" />
             </a>
           </div>
           <div className="menu">
@@ -48,7 +48,7 @@ const Header = () => {
                   }}
                   whileTap={{ scale: 0.7 }}
                   transition={{ duration: 0.3 }}
-                  href="/public/images/cv/1.jpg"
+                  href="/images/cv/1.jpg"
                   download
                 >
                   Download CV

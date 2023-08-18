@@ -8,17 +8,17 @@ const Features = () => {
   const features_list = [
     {
       title: "Dedication",
-      icon: "/public/images/svg/design.svg",
+      icon: "/images/svg/design.svg",
       text: "Sed do eiusmod tempor incididunt ut labore ullamco laboris nisi ut aliquip ex ea commo do conse namber onequat.",
     },
     {
       title: "Smart Work",
-      icon: "/public/images/svg/development.svg",
+      icon: "/images/svg/development.svg",
       text: "Sed do eiusmod tempor incididunt ut labore ullamco laboris nisi ut aliquip ex ea commo do conse namber onequat.",
     },
     {
       title: "Intelligence",
-      icon: "/public/images/svg/landing.svg",
+      icon: "/images/svg/landing.svg",
       text: "Sed do eiusmod tempor incididunt ut labore ullamco laboris nisi ut aliquip ex ea commo do conse namber onequat.",
     },
   ];

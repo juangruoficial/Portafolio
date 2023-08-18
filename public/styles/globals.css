@@ -1,6 +1,6 @@
-@import "/public/styles/plugins.css";
-@import "/public/styles/dark.css";
-@import "/public/styles/style.css";
+@import "/styles/plugins.css";
+@import "/styles/dark.css";
+@import "/styles/style.css";
 
 html {
   scroll-behavior: smooth;

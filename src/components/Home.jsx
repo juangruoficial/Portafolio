@@ -6,7 +6,7 @@ const homeData = {
   lastName: "Cruz",
   designation: "Web Developer",
   address: "Quindio",
-  img: "/public/images/about/profilephoto.webp",
+  img: "/images/about/profilephoto.webp",
   bio: "Welcome to my digital realm! I am a passionate web developer, ready to turn your vision into a stunning online reality.",
   numberOfProject: 6,
   numberofyear: 1,
@@ -76,7 +76,7 @@ const Home = () => {
                 <div className="main" data-img-url={homeData.img} />
                 <span className="win">
                   <img
-                    src="/public/images/svg/award.svg"
+                    src="/images/svg/award.svg"
                     alt=""
                     className="svg"
                     id="award"

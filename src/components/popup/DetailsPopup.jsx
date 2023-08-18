@@ -4,12 +4,12 @@ const DetailsPopup = ({ open, close }) => {
     <Popup open={open} close={close}>
       <div className="popup_details">
         <div className="top_image">
-          <img src="/public/images/thumbs/4-2.jpg" alt="" />
+          <img src="/images/thumbs/4-2.jpg" alt="" />
           <div
             className="main"
-            data-img-url="/public/images/portafolio/4.jpg"
+            data-img-url="/images/portafolio/4.jpg"
             style={{
-              backgroundImage: 'url("/public/images/portafolio/4.jpg")',
+              backgroundImage: 'url("/images/portafolio/4.jpg")',
             }}
           />
         </div>
@@ -60,7 +60,7 @@ const DetailsPopup = ({ open, close }) => {
             <li>
               <div className="list_inner">
                 <div className="my_image">
-                  <img src="/public/images/thumbs/4-2.jpg" alt="" />
+                  <img src="/images/thumbs/4-2.jpg" alt="" />
                   <div className="main" data-img-url="images/service/1.jpg" />
                 </div>
               </div>
@@ -68,22 +68,16 @@ const DetailsPopup = ({ open, close }) => {
             <li>
               <div className="list_inner">
                 <div className="my_image">
-                  <img src="/public/images/thumbs/4-2.jpg" alt="" />
-                  <div
-                    className="main"
-                    data-img-url="/public/images/service/2.jpg"
-                  />
+                  <img src="/images/thumbs/4-2.jpg" alt="" />
+                  <div className="main" data-img-url="/images/service/2.jpg" />
                 </div>
               </div>
             </li>
             <li>
               <div className="list_inner">
                 <div className="my_image">
-                  <img src="/public/images/thumbs/4-2.jpg" alt="" />
-                  <div
-                    className="main"
-                    data-img-url="/public/images/service/2.jpg"
-                  />
+                  <img src="/images/thumbs/4-2.jpg" alt="" />
+                  <div className="main" data-img-url="/images/service/2.jpg" />
                 </div>
               </div>
             </li>

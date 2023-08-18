@@ -5,8 +5,8 @@ import { useInView } from "react-intersection-observer";
 const serviceData = [
   {
     name: "Desktop Application",
-    icon: "/public/images/svg/cpu.svg",
-    img: "/public/images/service/webapplication.webp",
+    icon: "/images/svg/cpu.svg",
+    img: "/images/service/webapplication.webp",
     description: [
       "Within the realm of web design, Juan Cruz stands as a distinguished entity, fueled by my creative prowess. As a designer, I strive to construct avant-garde and effective websites that encapsulate the essence of each unique brand. Through my designs, I elevate conversion rates and unlock revenue potential, playing a pivotal role in business expansion and goal attainment.",
       "In the contemporary digital landscape, a brand's virtual façade—the website—serves as the inaugural point of interaction between consumers and the essence of a venture. An astonishing 95 percent of initial impressions are intertwined with the nuances of web design. This profound insight underscores the transformative potential of web design services, capable of significantly shaping a company's financial trajectory.",
@@ -15,8 +15,8 @@ const serviceData = [
   },
   {
     name: "Mobile Application",
-    icon: "/public/images/svg/phone.svg",
-    img: "/public/images/service/mobileapplication.webp",
+    icon: "/images/svg/phone.svg",
+    img: "/images/service/mobileapplication.webp",
     description: [
       "Diving into the dynamic realm of mobile app craftsmanship, Juan Cruz emerges as a trailblazer, committed to sculpting immersive and transformative applications. With an artful fusion of design and functionality, I encapsulate the very essence of your brand, curate captivating user experiences, boost conversion dynamics, and open new avenues for revenue generation. Through my creations, I empower businesses to expand their horizons, break barriers, and achieve their loftiest aspirations.",
       "In the contemporary digital arena, the mobile app serves as the ultimate gateway, seamlessly connecting users with your digital vision. Remarkably, nearly 95 percent of a user's initial perception hinges on the app's design and ease of use. This fact underscores the pivotal role that app design and development play in shaping not only user interactions but the overall trajectory of your project.",
@@ -25,8 +25,8 @@ const serviceData = [
   },
   {
     name: "Website Development",
-    icon: "/public/images/svg/web.svg",
-    img: "/public/images/service/webdevelopment.jpg",
+    icon: "/images/svg/web.svg",
+    img: "/images/service/webdevelopment.jpg",
     description: [
       "Web development is the art of creating interactive websites using languages like HTML, CSS, and JavaScript. It involves designing user interfaces and experiences while ensuring responsiveness across devices.",
       "Web development comprises two main aspects: front-end and back-end. Front-end focuses on visual elements, while back-end handles server-side scripting and database management, creating a seamless user experience.",
@@ -35,8 +35,8 @@ const serviceData = [
   },
   {
     name: "Game Development",
-    icon: "/public/images/svg/star.svg",
-    img: "/public/images/service/gamedevelopment.jpg",
+    icon: "/images/svg/star.svg",
+    img: "/images/service/gamedevelopment.jpg",
     description: [
       "Game development is a thrilling fusion of creativity and technology, where imaginative concepts evolve into captivating interactive experiences. Through a harmonious blend of art and programming, game developers craft virtual worlds that engage players on unprecedented levels. This process involves designing gameplay mechanics, characters, and environments, all orchestrated to create a seamless and immersive adventure.",
       "Central to game development are two key components: gameplay engineering and artistic design. The former encompasses the intricate coding of game mechanics, physics simulations, and artificial intelligence using languages like C++, C#, or Python. Meanwhile, the latter focuses on visual and auditory elements, including stunning graphics, dynamic animations, and captivating soundscapes. Collaboration between developers, artists, and sound engineers is paramount to achieve a harmonious and engaging final product.",
@@ -87,7 +87,7 @@ const Service = () => {
                       />
                       <img
                         className="popup_service_image"
-                        src="/public/images/service/1.jpg"
+                        src="/images/service/1.jpg"
                         alt=""
                       />
                     </div>
