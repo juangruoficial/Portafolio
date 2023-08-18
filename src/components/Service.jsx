@@ -1,5 +1,5 @@
 import { Fragment, useState } from "react";
-import ServicePopup from "./popup/ServicePopup.jsX";
+import ServicePopup from "./popup/ServicePopup.jsx";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 const serviceData = [
