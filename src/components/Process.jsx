@@ -2,12 +2,12 @@ import Accordion from "./Accordion";
 
 const Process = () => {
   return (
-    <div className="section">
+    <section className="section">
       <div className="process">
         <div className="container">
           <div className="process_inner">
-            <div className="left">
-              <div className="main_title" data-text-align="left">
+            <article className="left">
+              <section className="main_title" data-text-align="left">
                 <span>Working to make difference</span>
                 <h3>Real Passion to Create Amazing Things</h3>
                 <p>
@@ -17,17 +17,17 @@ const Process = () => {
                   enthusiasm for creating amazing things that leave a lasting
                   impact.
                 </p>
-              </div>
-            </div>
-            <div className="right">
+              </section>
+            </article>
+            <section className="right">
               <div className="acc_holder">
                 <Accordion />
               </div>
-            </div>
+            </section>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default Process;

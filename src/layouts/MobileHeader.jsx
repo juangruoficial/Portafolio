@@ -3,9 +3,9 @@ import { useState } from "react";
 const MobileHeader = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <div className="mobile_menu">
-      <div className="mobile_menu_inner">
-        <div className="mobile_in">
+    <header className="mobile_menu">
+      <article className="mobile_menu_inner">
+        <article className="mobile_in">
           <div className="logo">
             <a href="#">
               <img src="" alt="" />
@@ -22,9 +22,9 @@ const MobileHeader = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div
+        </article>
+      </article>
+      <section
         className="dropdown"
         style={{
           display: toggle ? "block" : "none",
@@ -51,14 +51,18 @@ const MobileHeader = () => {
               <a href="#blog">Blog</a>
             </li>
             <li className="download_cv">
-              <a href="" download>
-                Download CV
+              <a
+                target="_blank"
+                href="https://resume.io/r/DhhA0Yt90"
+                rel="noreferrer"
+              >
+                Watch CV
               </a>
             </li>
           </ul>
         </div>
-      </div>
-    </div>
+      </section>
+    </header>
   );
 };
 export default MobileHeader;

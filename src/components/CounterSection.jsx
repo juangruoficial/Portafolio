@@ -4,17 +4,17 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const counterData = [
-  { smallVlaue: true, value: 2, name: "Digital\nProducts" },
+  { smallVlaue: true, value: 5, name: "Digital\nProducts" },
   { smallVlaue: true, value: 1, name: "Open Source\nProjects" },
-  { smallVlaue: false, value: 6, name: "Lines of \nCode" },
+  { smallVlaue: false, value: 30, name: "Lines of \nCode" },
 ];
 const CounterSection = () => {
   const [ref, inView] = useInView();
   return (
-    <div className="section">
-      <div className="counter_section">
-        <div className="container">
-          <div className="counter_list">
+    <section className="section">
+      <section className="counter_section">
+        <section className="container">
+          <section className="counter_list">
             <ul>
               {counterData.map((counter, i) => (
                 <motion.li
@@ -28,9 +28,9 @@ const CounterSection = () => {
                   }}
                   transition={{ duration: 0.6, delay: i * 0.2 }}
                 >
-                  <div className="list_inner">
+                  <section className="list_inner">
                     <div className="wrapper">
-                      <div className="value">
+                      <article className="value">
                         <span className="abs">
                           <Counter end={counter.value} />
                           {counter.smallVlaue ? (
@@ -39,26 +39,21 @@ const CounterSection = () => {
                             <label className="big">K</label>
                           )}
                         </span>
-                      </div>
+                      </article>
                       <div className="text">
                         <h3
                           dangerouslySetInnerHTML={lineBreak(counter.name)}
                         ></h3>
                       </div>
                     </div>
-                  </div>
+                  </section>
                 </motion.li>
               ))}
             </ul>
-          </div>
-        </div>
-        <div
-          className="shape moving_effect"
-          data-direction="y"
-          data-reverse="yes"
-        />
-      </div>
-    </div>
+          </section>
+        </section>
+      </section>
+    </section>
   );
 };
 export default CounterSection;

@@ -48,24 +48,24 @@ const Contact = () => {
     }, 2000);
   };
   return (
-    <div className="section" id="contact">
-      <div className="contact">
+    <section className="section" id="contact">
+      <section className="contact">
         <div className="container">
           <div className="contact_inner">
-            <div className="main_title" data-text-align="left">
+            <article className="main_title" data-text-align="left">
               <span>{`Don't`} be shy</span>
               <h3>Drop Me a Line</h3>
-            </div>
-            <div className="in">
-              <div className="left ">
-                <div className="fields">
+            </article>
+            <section className="in">
+              <section className="left ">
+                <section className="fields">
                   <form
                     className="contact_form"
                     id="contact_form"
                     autoComplete="off"
                     onSubmit={(e) => onSubmit(e)}
                   >
-                    <div
+                    <p
                       className="returnmessage"
                       data-success="Your message has been received, We will contact you soon."
                     />
@@ -79,7 +79,7 @@ const Contact = () => {
                           : "Your message has been received, We will contact you soon."}
                       </span>
                     </div>
-                    <div className="first">
+                    <article className="first">
                       <ul>
                         <li>
                           <input
@@ -102,8 +102,8 @@ const Contact = () => {
                           />
                         </li>
                       </ul>
-                    </div>
-                    <div className="last">
+                    </article>
+                    <article className="last">
                       <textarea
                         id="message"
                         placeholder="Message"
@@ -111,28 +111,28 @@ const Contact = () => {
                         onChange={(e) => onChange(e)}
                         value={message}
                       />
-                    </div>
+                    </article>
                     <div className="button" data-position="left">
                       <input type="submit" value="Submit Message" />
                     </div>
                   </form>
-                </div>
-              </div>
-              <div className="right">
+                </section>
+              </section>
+              <section className="right">
                 <ul>
                   <li>
-                    <div className="list_inner">
+                    <section className="list_inner">
                       <div className="icon">
                         <i className="icon-location orangeText" />
                       </div>
-                      <div className="short">
+                      <article className="short">
                         <h3>Address</h3>
                         <span>Somewhere in world</span>
-                      </div>
-                    </div>
+                      </article>
+                    </section>
                   </li>
                   <li>
-                    <div className="list_inner">
+                    <article className="list_inner">
                       <div className="icon">
                         <i className="icon-mail-1 greenText" />
                       </div>
@@ -142,10 +142,10 @@ const Contact = () => {
                           <a href="#">cruz9606@gmail.com</a>
                         </span>
                       </div>
-                    </div>
+                    </article>
                   </li>
                   <li>
-                    <div className="list_inner">
+                    <article className="list_inner">
                       <div className="icon">
                         <i className="icon-phone purpleText" />
                       </div>
@@ -153,25 +153,15 @@ const Contact = () => {
                         <h3>Phone</h3>
                         <span>+573108322459</span>
                       </div>
-                    </div>
+                    </article>
                   </li>
                 </ul>
-              </div>
-            </div>
-            <div
-              className="shape moving_effect"
-              data-direction="y"
-              data-reverse="yes"
-            />
-            <div
-              className="shape_2 moving_effect"
-              data-direction="y"
-              data-reverse="yes"
-            />
+              </section>
+            </section>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </section>
   );
 };
 export default Contact;

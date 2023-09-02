@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import useClickOutside from "../UseClickOutside";
 
 const ImgViews = ({ close, src }) => {
@@ -6,9 +6,9 @@ const ImgViews = ({ close, src }) => {
     close(false);
   });
   return (
-    <Fragment>
+    <>
       <div className="mfp-bg mfp-ready" onClick={() => close(false)}></div>
-      <div
+      <section
         className="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ready"
         tabIndex={-1}
         style={{ overflow: "hidden auto" }}
@@ -23,8 +23,8 @@ const ImgViews = ({ close, src }) => {
           </div>
           <div className="mfp-preloader">Loading...</div>
         </div>
-      </div>
-    </Fragment>
+      </section>
+    </>
   );
 };
 
@@ -48,10 +48,6 @@ const ImageView = () => {
       });
     }, 1500);
   }, []);
-  return (
-    <Fragment>
-      {img && <ImgViews close={() => setImg(false)} src={imgValue} />}
-    </Fragment>
-  );
+  return <>{img && <ImgViews close={() => setImg(false)} src={imgValue} />}</>;
 };
 export default ImageView;

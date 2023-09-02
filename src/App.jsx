@@ -1,5 +1,5 @@
 import About from "./components/About";
-import Blog from "./components/Blog";
+
 import Contact from "./components/Contact";
 import Copyright from "./components/Copyright";
 import CounterSection from "./components/CounterSection";
@@ -12,7 +12,6 @@ import Skills from "./components/Skills";
 import Testimonials from "./components/Testimonials";
 
 import ImageView from "./components/popup/ImageView";
-import VideoPopup from "./components/popup/VideoPopup";
 
 import Header from "./layouts/Header";
 import MobileHeader from "./layouts/MobileHeader";
@@ -24,7 +23,7 @@ function App() {
   return (
     <>
       <Preloader />
-      <VideoPopup />
+
       <ImageView />
       <MobileHeader />
       <Header />
@@ -37,9 +36,7 @@ function App() {
       <Service />
       <Process />
       <Testimonials />
-      {/* Tengo qure revisar una imagen que no da dice service 1*/}
       <Contact />
-      <Blog />
       <Copyright />
       <Mouse />
       <ScrollTop />

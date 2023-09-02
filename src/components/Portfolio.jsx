@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import DetailsPopup from "./popup/DetailsPopup";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -6,20 +6,26 @@ const Portfolio = () => {
   const [ref, inView] = useInView();
   const [popup, setPopup] = useState(false);
   return (
-    <Fragment>
+    <>
       <DetailsPopup open={popup} close={() => setPopup(false)} />
-      <div className="section" id="portfolio">
-        <div className="portfolio">
+      <section className="section" id="portfolio">
+        <section className="portfolio">
           <div className="container">
-            <div className="main_title" data-text-align="center">
+            <article className="main_title" data-text-align="center">
               <span>Portfolio</span>
               <h3>My Amazing Works</h3>
               <p>
-                Dliquip ex ea commo do conse namber onequa ute irure dolor in
-                reprehen derit in voluptate
+                Welcome to my portfolio! I'm a junior developer passionate about
+                crafting technological solutions. My focus is on continuous
+                learning and growth in the world of web development and
+                programming. Here, you'll find a showcase of my projects and
+                work where I've applied my technical skills and enthusiasm for
+                innovation. I'm excited about the opportunity to collaborate on
+                challenging projects and continue honing my skills while working
+                together to achieve outstanding results.
               </p>
-            </div>
-            <div className="portfolio_list">
+            </article>
+            <article className="portfolio_list">
               <motion.ul
                 ref={ref}
                 initial={{ opacity: 0, y: 20 }}
@@ -31,13 +37,13 @@ const Portfolio = () => {
                 transition={{ duration: 0.6 }}
               >
                 <li>
-                  <div className="list_inner">
+                  <section className="list_inner">
                     <div
                       className="background_image"
                       data-img-url="/images/portafolio/galaxies.webp"
                     />
                     <div className="content">
-                      <div className="details">
+                      <article className="details">
                         <span className="category">
                           <a href="#">WebPage</a>
                         </span>
@@ -52,7 +58,7 @@ const Portfolio = () => {
                             View Project <i className="icon-right-big" />
                           </a>
                         </span>
-                      </div>
+                      </article>
                     </div>
                     <div className="overlay" />
                     <a
@@ -60,16 +66,16 @@ const Portfolio = () => {
                       className="full_link popup-page"
                       href="https://spacecuriositiesjuan.netlify.app/"
                     />
-                  </div>
+                  </section>
                 </li>
                 <li>
-                  <div className="list_inner">
+                  <section className="list_inner">
                     <div
                       className="background_image"
                       data-img-url="/images/portafolio/weatherweb.png"
                     />
-                    <div className="content">
-                      <div className="details">
+                    <section className="content">
+                      <article className="details">
                         <span className="category">
                           <a href="#">WebPage</a>
                         </span>
@@ -84,15 +90,15 @@ const Portfolio = () => {
                             View Project <i className="icon-right-big" />
                           </a>
                         </span>
-                      </div>
-                    </div>
+                      </article>
+                    </section>
                     <div className="overlay" />
                     <a
                       target="blank"
                       className="full_link popup-page"
                       href="https://weatheforecastjuan.netlify.app/"
                     />
-                  </div>
+                  </section>
                 </li>
                 <li>
                   <div className="list_inner">
@@ -100,7 +106,7 @@ const Portfolio = () => {
                       className="background_image"
                       data-img-url="/images/portafolio/rickandmorty.png"
                     />
-                    <div className="content">
+                    <section className="content">
                       <div className="details">
                         <span className="category">
                           <a href="#">Interactive page</a>
@@ -117,8 +123,8 @@ const Portfolio = () => {
                           </a>
                         </span>
                       </div>
-                    </div>
-                    <div className="overlay" />
+                    </section>
+
                     <a
                       target="blank"
                       className="full_link popup-page"
@@ -127,13 +133,13 @@ const Portfolio = () => {
                   </div>
                 </li>
                 <li>
-                  <div className="list_inner">
+                  <section className="list_inner">
                     <div
                       className="background_image"
                       data-img-url="/images/portafolio/ecommerce.png"
                     />
-                    <div className="content">
-                      <div className="details">
+                    <section className="content">
+                      <section className="details">
                         <span className="category">
                           <a href="#">Interactive page</a>
                         </span>
@@ -148,33 +154,22 @@ const Portfolio = () => {
                             View Project <i className="icon-right-big" />
                           </a>
                         </span>
-                      </div>
-                    </div>
+                      </section>
+                    </section>
 
-                    <div className="overlay" />
                     <a
                       target="blank"
                       className="full_link popup-page"
                       href="https://juane-commerce.netlify.app/"
                     />
-                  </div>
+                  </section>
                 </li>
-                <div
-                  className="shape_1 moving_effect"
-                  data-direction="y"
-                  data-reverse="yes"
-                />
-                <div
-                  className="shape_2 moving_effect"
-                  data-direction="y"
-                  data-reverse="yes"
-                />
               </motion.ul>
-            </div>
+            </article>
           </div>
-        </div>
-      </div>
-    </Fragment>
+        </section>
+      </section>
+    </>
   );
 };
 export default Portfolio;

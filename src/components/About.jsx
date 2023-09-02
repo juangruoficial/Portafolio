@@ -2,10 +2,9 @@ import { motion } from "framer-motion";
 
 const aboutData = {
   designation: "Developer",
-  title: "I Develop Application that Help People",
+  title: "I Develop Web Application that Help People",
   text: [
-    "Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat cupidatat",
-    "Krnon proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis",
+    "Beyond my professional pursuits, I am an avid traveler and a fervent advocate for sustainable living. Exploring diverse cultures and landscapes has enriched my worldview and reinforced my belief in the importance of environmental stewardship. In my free time, you can find me hiking in remote wilderness areas or volunteering for local conservation initiatives. My goal is to leverage my technical expertise to contribute to projects that align with my values and promote a more sustainable and interconnected world.",
   ],
   skillIcons: [
     { name: "joomla", icon: "/images/about/jssvg.svg" },
@@ -17,11 +16,11 @@ const aboutData = {
 
 const About = () => {
   return (
-    <div className="section" id="about">
-      <div className="about">
+    <section className="section" id="about">
+      <section className="about">
         <div className="container">
-          <div className="about_inner">
-            <div className="left">
+          <section className="about_inner">
+            <aside className="left">
               <div className="image_wrap">
                 <img src="/images/thumbs/64-49.jpg" alt="" />
                 <div
@@ -31,10 +30,6 @@ const About = () => {
                 <div className="extra_image">
                   <div className="image_inner">
                     <img src="/images/thumbs/1-1.jpg" alt="" />
-                    <div
-                      className="main_extra"
-                      data-img-url="/images/about/logojuandark.png"
-                    />
                   </div>
                 </div>
                 {aboutData.skillIcons.map((skill, i) => (
@@ -45,19 +40,19 @@ const About = () => {
                   </div>
                 ))}
               </div>
-            </div>
-            <div className="right">
-              <div className="title">
+            </aside>
+            <aside className="right">
+              <section className="title">
                 <span>
                   {`I'm`} a {aboutData.designation}
                 </span>
                 <h3>{aboutData.title}</h3>
-              </div>
-              <div className="text">
+              </section>
+              <section className="text">
                 {aboutData.text.map((text, i) => (
                   <p key={i}>{text}</p>
                 ))}
-              </div>
+              </section>
               <div className="button">
                 <motion.a
                   href="#portfolio"
@@ -73,11 +68,11 @@ const About = () => {
                   View Portfolio
                 </motion.a>
               </div>
-            </div>
-          </div>
+            </aside>
+          </section>
         </div>
-      </div>
-    </div>
+      </section>
+    </section>
   );
 };
 export default About;

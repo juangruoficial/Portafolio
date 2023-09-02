@@ -1,23 +1,23 @@
 const Copyright = () => {
   return (
-    <div className="section">
-      <div className="copyright">
-        <div className="container">
-          <div className="inner">
-            <div className="left">
+    <section className="section">
+      <section className="copyright">
+        <section className="container">
+          <section className="inner">
+            <aside className="left">
               <p>
                 Developed with love by{" "}
                 <a
-                  href="https://www.linkedin.com/in/juan-gru-oficial-undefined-a84511274/"
+                  href="https://www.linkedin.com/juancruz9696/"
                   rel="noreferrer"
                   target="_blank"
                 >
                   Juan Cruz
-                </a>{" "}
+                </a>
                 © {new Date().getFullYear()}
               </p>
-            </div>
-            <div className="right">
+            </aside>
+            <aside className="right">
               <ul>
                 <li>
                   <a href="#">Terms &amp; Condition</a>
@@ -26,11 +26,11 @@ const Copyright = () => {
                   <a href="#">Privacy Policy</a>
                 </li>
               </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            </aside>
+          </section>
+        </section>
+      </section>
+    </section>
   );
 };
 export default Copyright;

@@ -36,9 +36,7 @@ const Header = () => {
               <li>
                 <a href="#contact">Contact</a>
               </li>
-              <li>
-                <a href="#blog">Blog</a>
-              </li>
+
               <li className="download_cv">
                 <motion.a
                   whileHover={{
@@ -48,10 +46,10 @@ const Header = () => {
                   }}
                   whileTap={{ scale: 0.7 }}
                   transition={{ duration: 0.3 }}
-                  href="/images/cv/1.jpg"
-                  download
+                  href="https://resume.io/r/DhhA0Yt90"
+                  target="_blank"
                 >
-                  Download CV
+                  Watch CV
                 </motion.a>
               </li>
             </ul>

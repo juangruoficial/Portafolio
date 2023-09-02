@@ -7,10 +7,10 @@ import SwiperCore, {
 SwiperCore.use([Pagination, Navigation, EffectFade, Autoplay]);
 export const testimonialsSlider = {
   slidesPerView: 1,
-  spaceBetween: 25,
+  spaceBetween: 20,
   loop: true,
   autoplay: {
-    delay: 6000,
+    delay: 2000,
     disableOnInteraction: false,
   },
   pagination: {

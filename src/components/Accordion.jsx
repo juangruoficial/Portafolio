@@ -36,10 +36,10 @@ const Accordion = () => {
     value === active ? setActive(null) : setActive(value);
 
   return (
-    <Fragment>
+    <>
       <div className="accordion" data-active={1} data-type="accordion">
         {accordionData.map((accordion, i) => (
-          <motion.div
+          <motion.section
             key={i}
             ref={ref}
             initial={{ opacity: 0, y: 20 }}
@@ -51,11 +51,11 @@ const Accordion = () => {
             transition={{ duration: 0.6, delay: i * 0.1 }}
             className={`accordion_in ${active == i ? "acc_active" : ""}`}
           >
-            <div className="acc_head" onClick={() => onClick(i)}>
+            <article className="acc_head" onClick={() => onClick(i)}>
               <span className="plus" />
               <p>{accordion.title}</p>
-            </div>
-            <div
+            </article>
+            <article
               className={`acc_content d-block`}
               ref={contentEl}
               style={
@@ -67,14 +67,14 @@ const Accordion = () => {
                   : { height: "0px" }
               }
             >
-              <div className="acc_content_in">
+              <aside className="acc_content_in">
                 <p>{accordion.details}</p>
-              </div>
-            </div>
-          </motion.div>
+              </aside>
+            </article>
+          </motion.section>
         ))}
       </div>
-    </Fragment>
+    </>
   );
 };
 export default Accordion;

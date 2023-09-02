@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import ServicePopup from "./popup/ServicePopup.jsx";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -49,16 +49,16 @@ const Service = () => {
   const [activeData, setActiveData] = useState({});
   const [open, setOpen] = useState(false);
   return (
-    <Fragment>
+    <>
       <ServicePopup
         open={open}
         close={() => setOpen(false)}
         data={activeData}
       />
-      <div className="section" id="service">
-        <div className="service">
-          <div className="container">
-            <div className="service_list">
+      <section className="section" id="service">
+        <section className="service">
+          <section className="container">
+            <section className="service_list">
               <ul>
                 {serviceData.map((service, i) => (
                   <motion.li
@@ -72,7 +72,7 @@ const Service = () => {
                     }}
                     transition={{ duration: 0.6, delay: i * 0.1 }}
                   >
-                    <div className="list_inner">
+                    <section className="list_inner">
                       <img className="svg" src={service.icon} alt="" />
                       <h3 className="title">{service.name}</h3>
                       <p className="text">
@@ -90,20 +90,15 @@ const Service = () => {
                         src="/images/service/1.jpg"
                         alt=""
                       />
-                    </div>
+                    </section>
                   </motion.li>
                 ))}
               </ul>
-            </div>
-          </div>
-          <div
-            className="shape moving_effect"
-            data-direction="y"
-            data-reverse="yes"
-          />
-        </div>
-      </div>
-    </Fragment>
+            </section>
+          </section>
+        </section>
+      </section>
+    </>
   );
 };
 export default Service;

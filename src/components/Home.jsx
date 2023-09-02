@@ -15,13 +15,12 @@ const homeData = {
 const Home = () => {
   const [ref, inView] = useInView();
   return (
-    <motion.div
+    <motion.section
       initial={{ opacity: 0, y: -20 }}
       animate={{
-        opacity: 1,
         y: 0,
         opacity: inView ? 1 : 0,
-        y: inView ? 0 : 20,
+
         scale: inView ? 1 : 0.75,
       }}
       transition={{ delay: 0.2, duration: 0.6 }}
@@ -29,14 +28,14 @@ const Home = () => {
       className="section"
       id="home"
     >
-      <div className="hero">
+      <section className="hero">
         <div className="background">
           <div className="image" data-img-url="/images/hero/home.webp" />
         </div>
-        <div className="container">
-          <div className="content">
-            <div className="left">
-              <div className="inner">
+        <section className="container">
+          <section className="content">
+            <aside className="left">
+              <section className="inner">
                 <h3 className="hello">Hello {`I'm`}</h3>
                 <h3 className="name">
                   {homeData.firstName} {homeData.lastName}
@@ -66,10 +65,10 @@ const Home = () => {
                     </a>
                   </div>
                 </div>
-              </div>
+              </section>
               <h3 className="stroke_1">{homeData.firstName}</h3>
               <h3 className="stroke_2">{homeData.lastName}</h3>
-            </div>
+            </aside>
             <div className="right">
               <div className="image">
                 <img src="/images/thumbs/53-61.jpg" alt="" />
@@ -112,10 +111,10 @@ const Home = () => {
                 </span>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </motion.div>
+          </section>
+        </section>
+      </section>
+    </motion.section>
   );
 };
 export default Home;

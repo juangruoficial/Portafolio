@@ -24,44 +24,42 @@ const Features = () => {
   ];
 
   return (
-    <div className="section">
-      <div className="features">
-        <div className="container">
-          <div className="features_list">
-            <ul>
-              {features_list.map((feature, i) => (
-                <motion.li
-                  ref={ref}
-                  key={i}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{
-                    opacity: inView ? 1 : 0,
-                    y: inView ? 0 : 20,
-                    scale: inView ? 1 : 0.75,
-                  }}
-                  transition={{ duration: 0.6, delay: i * 0.2 }}
-                >
-                  <div className="list_inner">
-                    <div className="short">
-                      <div className="title">
-                        <span>{`0${i + 1}`}</span>
-                        <h3>{feature.title}</h3>
-                      </div>
-                      <div className="icon">
-                        <img className="svg" src={feature.icon} alt="" />
-                      </div>
+    <section className="features">
+      <section className="container">
+        <section className="features_list">
+          <ul>
+            {features_list.map((feature, i) => (
+              <motion.li
+                ref={ref}
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{
+                  opacity: inView ? 1 : 0,
+                  y: inView ? 0 : 20,
+                  scale: inView ? 1 : 0.75,
+                }}
+                transition={{ duration: 0.6, delay: i * 0.2 }}
+              >
+                <div className="list_inner">
+                  <div className="short">
+                    <div className="title">
+                      <span>{`0${i + 1}`}</span>
+                      <h3>{feature.title}</h3>
                     </div>
-                    <div className="text">
-                      <p>{feature.text}</p>
+                    <div className="icon">
+                      <img className="svg" src={feature.icon} alt="" />
                     </div>
                   </div>
-                </motion.li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+                  <div className="text">
+                    <p>{feature.text}</p>
+                  </div>
+                </div>
+              </motion.li>
+            ))}
+          </ul>
+        </section>
+      </section>
+    </section>
   );
 };
 
