@@ -7,15 +7,15 @@ const ScrollTop = () => {
   }, []);
 
   const textStyle = {
-    bottom: "190.75px",
-    fontSize: "26px",
+    bottom: "155.75px",
+    fontSize: "16px",
     fontWeight: "bold",
     color: "#FF5733",
   };
 
   const lineStyle = {
-    height: "10px",
-    width: "5px",
+    height: "5px",
+    width: "3px",
     backgroundColor: "#FF5733",
   };
 

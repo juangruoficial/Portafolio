@@ -9,17 +9,17 @@ const Features = () => {
     {
       title: "Dedication",
       icon: "/images/svg/design.svg",
-      text: "Sed do eiusmod tempor incididunt ut labore ullamco laboris nisi ut aliquip ex ea commo do conse namber onequat.",
+      text: "Through unwavering dedication, I've transformed challenges into opportunities, turning my passion into expertise. Let's collaborate and bring dedication-driven success to your team. Contact me today to start our journey together.",
     },
     {
       title: "Smart Work",
       icon: "/images/svg/development.svg",
-      text: "Sed do eiusmod tempor incididunt ut labore ullamco laboris nisi ut aliquip ex ea commo do conse namber onequat.",
+      text: "With a proven track record of not just hard work but also smart work, I'm ready to bring efficiency and innovation to your team. Let's achieve goals intelligently. Reach out to me today to explore how I can contribute to your organization's success.",
     },
     {
       title: "Intelligence",
       icon: "/images/svg/landing.svg",
-      text: "Sed do eiusmod tempor incididunt ut labore ullamco laboris nisi ut aliquip ex ea commo do conse namber onequat.",
+      text: "My commitment to excellence is driven by a relentless pursuit of intelligence and continuous learning. I believe that intelligence combined with dedication can lead to remarkable achievements. I invite you to reach out and explore how my intelligence can benefit your team and projects.",
     },
   ];
 
@@ -29,17 +29,7 @@ const Features = () => {
         <section className="features_list">
           <ul>
             {features_list.map((feature, i) => (
-              <motion.li
-                ref={ref}
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{
-                  opacity: inView ? 1 : 0,
-                  y: inView ? 0 : 20,
-                  scale: inView ? 1 : 0.75,
-                }}
-                transition={{ duration: 0.6, delay: i * 0.2 }}
-              >
+              <li ref={ref} key={i}>
                 <div className="list_inner">
                   <div className="short">
                     <div className="title">
@@ -54,7 +44,7 @@ const Features = () => {
                     <p>{feature.text}</p>
                   </div>
                 </div>
-              </motion.li>
+              </li>
             ))}
           </ul>
         </section>

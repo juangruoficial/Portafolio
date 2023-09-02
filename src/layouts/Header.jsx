@@ -8,18 +8,18 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="nav_header">
-      <div className="container">
-        <div className="header_inner">
-          <div className="logo">
+    <section className="nav_header">
+      <section className="container">
+        <section className="header_inner">
+          <aside className="logo">
             <a className="light" href="#">
               <img src="/images/about/logojuan.png" alt="" />
             </a>
             <a className="dark" href="#">
               <img src="/images/about/logojuandark.png" alt="" />
             </a>
-          </div>
-          <div className="menu">
+          </aside>
+          <section className="menu">
             <ul className="anchor_nav">
               <li className="current">
                 <a href="#home">Home</a>
@@ -53,10 +53,10 @@ const Header = () => {
                 </motion.a>
               </li>
             </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+          </section>
+        </section>
+      </section>
+    </section>
   );
 };
 export default Header;

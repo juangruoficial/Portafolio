@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ServicePopup from "./popup/ServicePopup.jsx";
-import { motion } from "framer-motion";
+
 import { useInView } from "react-intersection-observer";
 const serviceData = [
   {
@@ -45,7 +45,9 @@ const serviceData = [
   },
 ];
 const Service = () => {
-  const [ref, inView] = useInView();
+  const [ref, inView] = useInView({
+    threshold: 0.3, // Cambia el umbral a 0.5 para activar la animación cuando el elemento esté al menos 50% visible.
+  });
   const [activeData, setActiveData] = useState({});
   const [open, setOpen] = useState(false);
   return (
@@ -61,17 +63,7 @@ const Service = () => {
             <section className="service_list">
               <ul>
                 {serviceData.map((service, i) => (
-                  <motion.li
-                    ref={ref}
-                    key={i}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{
-                      opacity: inView ? 1 : 0,
-                      y: inView ? 0 : 10,
-                      scale: inView ? 1 : 0.95,
-                    }}
-                    transition={{ duration: 0.6, delay: i * 0.1 }}
-                  >
+                  <li ref={ref} key={i}>
                     <section className="list_inner">
                       <img className="svg" src={service.icon} alt="" />
                       <h3 className="title">{service.name}</h3>
@@ -91,7 +83,7 @@ const Service = () => {
                         alt=""
                       />
                     </section>
-                  </motion.li>
+                  </li>
                 ))}
               </ul>
             </section>
