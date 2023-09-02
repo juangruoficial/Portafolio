@@ -3170,13 +3170,16 @@ h6 {
     margin-bottom: 27px;
   }
 }
-@media (max-width: 1040px) {
+
+@media (max-width: 700px) {
   .nav_header {
     display: none;
   }
   .mobile_menu {
     display: block;
   }
+}
+@media (max-width: 1040px) {
   .hero .stroke_1,
   .hero .stroke_2 {
     display: none;
