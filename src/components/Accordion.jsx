@@ -37,7 +37,7 @@ const Accordion = () => {
 
   return (
     <>
-      <div className="accordion" data-active={1} data-type="accordion">
+      <section className="accordion" data-active={1} data-type="accordion">
         {accordionData.map((accordion, i) => (
           <motion.section
             key={i}
@@ -73,7 +73,7 @@ const Accordion = () => {
             </article>
           </motion.section>
         ))}
-      </div>
+      </section>
     </>
   );
 };

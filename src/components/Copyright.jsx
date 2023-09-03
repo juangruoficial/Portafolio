@@ -6,7 +6,7 @@ const Copyright = () => {
           <section className="inner">
             <aside className="left">
               <p>
-                Developed with love by{" "}
+                Developed with love by
                 <a
                   href="https://www.linkedin.com/juancruz9696/"
                   rel="noreferrer"

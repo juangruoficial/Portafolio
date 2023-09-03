@@ -11,8 +11,6 @@ import Service from "./components/Service";
 import Skills from "./components/Skills";
 import Testimonials from "./components/Testimonials";
 
-import ImageView from "./components/popup/ImageView";
-
 import Header from "./layouts/Header";
 import MobileHeader from "./layouts/MobileHeader";
 import Mouse from "./layouts/Mouse";
@@ -23,8 +21,6 @@ function App() {
   return (
     <>
       <Preloader />
-
-      <ImageView />
       <MobileHeader />
       <Header />
       <Home />

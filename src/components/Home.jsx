@@ -1,16 +1,7 @@
 import Counter from "./Counter.jsx";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-const homeData = {
-  firstName: "Juan",
-  lastName: "Cruz",
-  designation: "Web Developer",
-  address: "Quindio",
-  img: "/images/about/profilephoto.webp",
-  bio: "Welcome to my digital realm! I am a passionate web developer, ready to turn your vision into a stunning online reality.",
-  numberOfProject: 6,
-  numberofyear: 1,
-};
+import { homeData } from "../shared/constHomeData";
 
 const Home = () => {
   const [ref, inView] = useInView();
@@ -69,7 +60,7 @@ const Home = () => {
               <h3 className="stroke_1">{homeData.firstName}</h3>
               <h3 className="stroke_2">{homeData.lastName}</h3>
             </aside>
-            <div className="right">
+            <aside className="right">
               <div className="image">
                 <img src="/images/thumbs/53-61.jpg" alt="" />
                 <div className="main" data-img-url={homeData.img} />
@@ -110,7 +101,7 @@ const Home = () => {
                   <img src="#" alt="" />
                 </span>
               </div>
-            </div>
+            </aside>
           </section>
         </section>
       </section>

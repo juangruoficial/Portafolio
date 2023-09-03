@@ -361,6 +361,7 @@ h6 {
 
 .nav_header {
   position: fixed;
+
   top: 0px;
   left: 0px;
   right: 0px;
@@ -1403,10 +1404,11 @@ h6 {
   margin-bottom: 190px;
 }
 .skills .skills_wrapper {
+  padding: 10px;
   width: 100%;
   height: auto;
   clear: both;
-  display: flex;
+  display: grid;
   margin-top: 77px;
 }
 .skills .left {
@@ -1426,7 +1428,6 @@ h6 {
 }
 .progress_inner {
   width: 100%;
-  margin-bottom: 39px;
 }
 .progress_inner:last-child {
   margin-bottom: 0px;
@@ -3285,9 +3286,7 @@ h6 {
   .counter_section .counter_list .list_inner {
     padding: 0px;
   }
-  .counter_section .counter_list .wrapper {
-    justify-content: flex-start;
-  }
+
   .main_title span {
     font-size: 20px;
   }
@@ -3310,19 +3309,10 @@ h6 {
     font-size: 13px;
   }
   .skills .skills_wrapper {
-    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
-  .skills .left {
-    width: 100%;
-    padding: 0px;
-  }
-  .skills .right {
-    width: 100%;
-    padding: 0px;
-  }
-  .skills .left {
-    margin-bottom: 26px;
-  }
+
   .service .service_list ul li .svg {
     width: 60px;
     height: 60px;

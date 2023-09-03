@@ -1,7 +1,30 @@
 import { useEffect } from "react";
 import { scrollSection, stickyNav } from "../utilits/utilits.js";
 import { motion } from "framer-motion";
+import Menu from "../components/Menu.jsx";
 const Header = () => {
+  const lists = {
+    home: {
+      name: "Home",
+      link: "#home",
+    },
+    about: {
+      name: "About",
+      link: "#about",
+    },
+    portfolio: {
+      name: "Portfolio",
+      link: "#portfolio",
+    },
+    service: {
+      name: "Service",
+      link: "#service",
+    },
+    contact: {
+      name: "Contact",
+      link: "#contact",
+    },
+  };
   useEffect(() => {
     window.addEventListener("scroll", stickyNav);
     window.addEventListener("scroll", scrollSection);
@@ -20,39 +43,7 @@ const Header = () => {
             </a>
           </aside>
           <section className="menu">
-            <ul className="anchor_nav">
-              <li className="current">
-                <a href="#home">Home</a>
-              </li>
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#portfolio">Portfolio</a>
-              </li>
-              <li>
-                <a href="#service">Service</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-
-              <li className="download_cv">
-                <motion.a
-                  whileHover={{
-                    scale: 1.09,
-                    background:
-                      "linear-gradient(135deg, #FF6B6B 0%, #FFB72B 100%)",
-                  }}
-                  whileTap={{ scale: 0.7 }}
-                  transition={{ duration: 0.3 }}
-                  href="https://resume.io/r/DhhA0Yt90"
-                  target="_blank"
-                >
-                  Watch CV
-                </motion.a>
-              </li>
-            </ul>
+            <Menu />
           </section>
         </section>
       </section>
