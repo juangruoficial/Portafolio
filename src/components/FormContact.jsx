@@ -33,7 +33,7 @@ const FormContact = () => {
               onChange={(e) => onChange(e)}
               value={name}
               type="text"
-              placeholder="Name"
+              placeholder="Write your name here"
             />
           </li>
           <li>
@@ -43,7 +43,7 @@ const FormContact = () => {
               name="email"
               onChange={(e) => onChange(e)}
               value={email}
-              placeholder="Email"
+              placeholder="Example@juan.com"
             />
           </li>
         </ul>
@@ -51,7 +51,7 @@ const FormContact = () => {
       <article className="last">
         <textarea
           id="message"
-          placeholder="Message"
+          placeholder="Write your message here"
           name="message"
           onChange={(e) => onChange(e)}
           value={message}
