@@ -5,6 +5,12 @@ const portafolioData = {
     "Welcome to my portfolio! I'm a junior developer passionate about crafting technological solutions. My focus is on continuous learning and growth in the world of web development and programming. Here, you'll find a showcase of my projects and work where I've applied my technical skills and enthusiasm for innovation. I'm excited about the opportunity to collaborate on challenging projects and continue honing my skills while working together to achieve outstanding results.",
   projects: [
     {
+      title: "Web Aplication for Pokemon",
+      category: "Interactive page",
+      url: "https://pokedexjuan.netlify.app/pokedex",
+      image: "/images/portafolio/pokedex.png",
+    },
+    {
       title: "Web Application for knowledge about galaxies",
       category: "WebPage",
       url: "https://spacecuriositiesjuan.netlify.app/",

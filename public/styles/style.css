@@ -1163,6 +1163,9 @@ h6 {
   padding: 150px 95px;
 }
 .portfolio ul li .details {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 12px;
   float: left;
 }
 .portfolio ul li:nth-child(2n) .details {
@@ -1178,6 +1181,7 @@ h6 {
   font-size: 18px;
   font-weight: 600;
   display: inline-block;
+  font-size: 1rem;
 }
 .portfolio ul li .title {
   line-height: 1.3;

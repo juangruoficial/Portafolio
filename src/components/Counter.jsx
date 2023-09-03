@@ -4,7 +4,7 @@ const Counter = ({ end, decimals }) => {
   return (
     <CountUp
       end={end ? end : 100}
-      duration={1}
+      duration={2}
       decimals={decimals ? decimals : 0}
     >
       {({ countUpRef, start }) => (
